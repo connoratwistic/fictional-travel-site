@@ -1,4 +1,5 @@
 import '../styles/styles.css';
+import ClientArea from './modules/ClientArea';
 
 // React Related Code
 // import React from 'react';
@@ -15,6 +16,8 @@ import '../styles/styles.css';
 // }
 
 // ReactDOM.render(<MyAmazingCompononent />, document.querySelector("#my-react-example"));
+
+new ClientArea();
 
 if (module.hot)
 {
