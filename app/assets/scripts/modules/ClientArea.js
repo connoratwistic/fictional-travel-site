@@ -5,15 +5,15 @@ class ClientArea
     constructor()
     {
         this.injectHTML();
-        this.events();
         this.form = document.querySelector('.client-area__form');
         this.field = document.querySelector('.client-area__input');
         this.contentArea = document.querySelector('.client-area__content-area');
+        this.events();
     }
 
     events() 
     {
-        this.form.addEventListener('submit', e => {
+        this.form.addEventListener("submit", e => {
             e.preventDefault();
             this.sendRequest();
         })
